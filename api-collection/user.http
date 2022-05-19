@@ -1,0 +1,31 @@
+@baseUrl = http://localhost:5000/api
+
+# Users
+
+# @name register
+POST {{baseUrl}}/users/register
+Content-Type: application/json
+
+{
+    "name": "Trung",
+    "email": "letrung020820001@gmail.com",
+    "password": "trungpassword123"
+}
+
+###
+
+# @name login
+POST {{baseUrl}}/users/login
+Content-Type: application/json
+
+{
+    "email": "letrung020820001@gmail.com",
+    "password": "trungpassword123"
+}
+
+###
+
+# @name getUser
+
+GET {{baseUrl}}/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyODViZWFjN2I1ZmZiMGZkODJhMzMyNSIsImlhdCI6MTY1MjkzMjQ1MiwiZXhwIjoxNjUzMDE4ODUyfQ.vC37kjl6lK9rzdZCiEGdeQQlJrNxWPr44450e-qHSfI
